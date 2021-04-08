@@ -57,9 +57,8 @@ The data used was published in "Structured crowdsourcing enables convolutional s
 ## DEMO
 ### Install dependencies
 ~~~
-$ conda install gpflow
+$ conda install gpflow=1.14
 ~~~
 
 ### Run the code
 - Download the data which is publicly available at https://github.com/CancerDataScience/CrowdsourcingDataset-Amgadetal2019.
--
