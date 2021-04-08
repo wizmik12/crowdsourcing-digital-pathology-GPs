@@ -9,16 +9,17 @@
 
 ## Abstract
 The volume of labeled data is often the primary determinant of success in developing machine learning algorithms. This has increased interest in methods for leveraging crowds to scale data labeling efforts, and methods to learn from noisy crowd-sourced labels. The need to scale labeling is acute but particularly challenging in medical applications like pathology, due to the expertise required to generate quality labels and the limited availability of qualified experts. In this paper we investigate the application of Scalable Variational Gaussian Processes for Crowdsourcing (SVGPCR) in digital pathology. We compare SVGPCR with other crowdsourcing methods using a large multi-rater dataset where pathologists, pathology residents, and medical students annotated tissue regions breast cancer. Our study shows that SVGPCR is competitive with equivalent methods trained using gold-standard pathologist generated labels, and that SVGPCR meets or exceeds the performance of other crowdsourcing methods based on deep learning. We also show how SVGPCR can effectively learn the class-conditional reliabilities of individual annotators and demonstrate that gaussian-process classifiers have comparable performance to similar deep learning methods. These results suggest that SVGPCR can meaningfully engage non-experts in pathology labeling tasks, and that the class-conditional reliabilities estimated by SVGPCR may assist in matching annotators to tasks where they perform well.
- 
+
  ## Description of the repo
  This repo contains the code used for the paper "Learning from crowds in digital pathology using scalable variational Gaussian processes". We include all the scripts for preprocessing the database as well as for the crowdsource classification.
 
  A detailed explanation of the tree directory is detailed below.
- 
-- [XX](XX)
-- [XX](XX)
-- [XX](XX)
-  - [XX](XX)
+
+- [Code](code/) Contains the code used in the work.
+  - [svgpcr_method](code/svgpcr_method) Contains the code used for feature extraction and classification using VGG16 and Gaussian Processes.
+     - [svgpcr.py](code/svgpcr_method/svgpcr.py) The code for the crowdsourcing classification method based on gaussian processes.
+  - [preprocessing_database](code/preprocessing_database) contains the code for preprocessing the database: color normalization, extracting patches, annotations, etc.
+  - [other_CR_methods](code/other_CR_methods) Contains the code for using other crowdsourcing classification methods based on DL.
 
 ## Data source
 
@@ -56,7 +57,7 @@ The data used was published in "Structured crowdsourcing enables convolutional s
 ## DEMO
 ### Install dependencies
 ~~~
-$ conda install gpflow 
+$ conda install gpflow
 ~~~
 
 ### Run the code
