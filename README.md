@@ -1,5 +1,7 @@
 # Learning from crowds in digital pathology using scalable variational Gaussian processes
 
+![Approach](figures/Figure1.png)
+
 ### Code for replicating the results of the paper [Learning from crowds in digital pathology using scalable variational Gaussian processes](https:)
 
 #### Citation
@@ -42,9 +44,6 @@ The data used was published in "Structured crowdsourcing enables convolutional s
 ~~~
 
 ## Figures
-
-### Approach
-![Approach](figures/Figure1.png)
 
 ### Training setting
 ![Training setting](figures/Figure2.png)
