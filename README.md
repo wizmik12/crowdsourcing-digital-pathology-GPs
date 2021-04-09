@@ -15,11 +15,11 @@ The volume of labeled data is often the primary determinant of success in develo
 
  A detailed explanation of the tree directory is detailed below.
 
-- [Code](code/) Contains the code used in the work.
-  - [svgpcr_method](code/svgpcr_method) Contains the code used for feature extraction and classification using VGG16 and Gaussian Processes.
-     - [svgpcr.py](code/svgpcr_method/svgpcr.py) The code for the crowdsourcing classification method based on gaussian processes.
-  - [preprocessing_database](code/preprocessing_database) contains the code for preprocessing the database: color normalization, extracting patches, annotations, etc.
-  - [other_CR_methods](code/other_CR_methods) Contains the code for using other crowdsourcing classification methods based on DL.
+- [Code](code/): It contains the code used in the work.
+  - [svgpcr_method](code/svgpcr_method): It contains the code used for feature extraction and classification using VGG16 and Gaussian Processes.
+     - [svgpcr.py](code/svgpcr_method/svgpcr.py): The code for the crowdsourcing classification method based on gaussian processes.
+  - [preprocessing_database](code/preprocessing_database): It contains the code for preprocessing the database: color normalization, extracting patches, annotations, etc.
+  - [other_CR_methods](code/other_CR_methods): It contains the code for using other crowdsourcing classification methods based on DL.
 
 ## Data source
 
@@ -62,3 +62,15 @@ $ conda install gpflow=1.14
 
 ### Run the code
 - Download the data which is publicly available at https://github.com/CancerDataScience/CrowdsourcingDataset-Amgadetal2019.
+
+#### Prepare the data
+- To normalize the images, run the script [color_normalization.py](preprocessing_database/color_normalization.py).
+- To extract patches use:
+   - [extracting_patches.py](preprocessing_database/extracting_patches.py) and [extract_corrected_patches.py](preprocessing_database/extract_corrected_patches.py).
+ - To extract annotations use:
+   - [annotations_evaluation_set.py](preprocessing_database/annotations_evaluation_set.py), [core_set_annotation.py](preprocessing_database/core_set_annotation.py) and [extra_set.py](preprocessing_database/extra_set.py).
+- To split train/test use:
+  - [relocating_train.py](preprocessing_database/relocating_train.py) and [relocating_core_train.py](preprocessing_database/relocating_core_train.py).
+
+#### Crowdsourcing classification
+- 
