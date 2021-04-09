@@ -75,9 +75,9 @@ $ conda install gpflow=1.14
 #### Crowdsourcing classification
 - To **extract features** with a pretrained VGG16, run the script [extract_features.py](code/svgpcr_method/extract_features.py)
 - To perform classification using **GPs**:
- - Gold (expert labels) - [svgp_gold_softmax.py](code/svgpcr_method/svgp_gold_softmax.py)
- - Crowdsource (non-expert labels) - [run_svgpcr_softmax.py](code/svgpcr_method/run_svgpcr_softmax.py)
- - Majority voting (non-expert labels) - [svgp_MV_per_pixel_softmax.py](code/svgpcr_method/svgp_MV_per_pixel_softmax.py)
+  - Gold (expert labels) - [svgp_gold_softmax.py](code/svgpcr_method/svgp_gold_softmax.py)
+  - Crowdsource (non-expert labels) - [run_svgpcr_softmax.py](code/svgpcr_method/run_svgpcr_softmax.py)
+  - Majority voting (non-expert labels) - [svgp_MV_per_pixel_softmax.py](code/svgpcr_method/svgp_MV_per_pixel_softmax.py)
 - To perform classification using **VGG16**:
   - Gold (expert labels) - [vgg16_data_augmentation.py](code/svgpcr_method/vgg16_data_augmentation.py)
   - Majority voting (non-expert labels) - [MV_per_pixel_vgg16.py](code/svgpcr_method/MV_per_pixel_vgg16.py)
