@@ -64,13 +64,25 @@ $ conda install gpflow=1.14
 - Download the data which is publicly available at https://github.com/CancerDataScience/CrowdsourcingDataset-Amgadetal2019.
 
 #### Prepare the data
-- To normalize the images, run the script [color_normalization.py](preprocessing_database/color_normalization.py).
+- To normalize the images, run the script [color_normalization.py](code/preprocessing_database/color_normalization.py).
 - To extract patches use:
-   - [extracting_patches.py](preprocessing_database/extracting_patches.py) and [extract_corrected_patches.py](preprocessing_database/extract_corrected_patches.py).
+   - [extracting_patches.py](code/preprocessing_database/extracting_patches.py) and [extract_corrected_patches.py](code/preprocessing_database/extract_corrected_patches.py).
  - To extract annotations use:
-   - [annotations_evaluation_set.py](preprocessing_database/annotations_evaluation_set.py), [core_set_annotation.py](preprocessing_database/core_set_annotation.py) and [extra_set.py](preprocessing_database/extra_set.py).
+   - [annotations_evaluation_set.py](code/preprocessing_database/annotations_evaluation_set.py), [core_set_annotation.py](code/preprocessing_database/core_set_annotation.py) and [extra_set.py](code/preprocessing_database/extra_set.py).
 - To split train/test use:
-  - [relocating_train.py](preprocessing_database/relocating_train.py) and [relocating_core_train.py](preprocessing_database/relocating_core_train.py).
+  - [relocating_train.py](code/preprocessing_database/relocating_train.py) and [relocating_core_train.py](code/preprocessing_database/relocating_core_train.py).
 
 #### Crowdsourcing classification
-- 
+- To extract features with a pretrained VGG16, run the script [extract_features.py](code/svgpcr_method/extract_features.py)
+- To perform classification using GPs:
+ - Gold (expert labels) - [svgp_gold_softmax.py](code/svgpcr_method/svgp_gold_softmax.py)
+ - Crowdsource (non-expert labels) - [run_svgpcr_softmax.py](code/svgpcr_method/run_svgpcr_softmax.py)
+ - Majority voting (non-expert labels) - [svgp_MV_per_pixel_softmax.py](code/svgpcr_method/svgp_MV_per_pixel_softmax.py)
+- To perform classification using VGG16:
+  - Gold (expert labels) - [vgg16_data_augmentation.py](code/svgpcr_method/vgg16_data_augmentation.py)
+  - Majority voting (non-expert labels) - [MV_per_pixel_vgg16.py](code/svgpcr_method/MV_per_pixel_vgg16.py)
+- To perform crowdsource classification using DL:
+  - AggNet - [run_AggNet.py](code/other_CR_methods/run_AggNet.py)
+  - [CrowdLayer](https://github.com/fmpr/CrowdLayer) - [run_CL.py](code/other_CR_methods/run_CL.py)
+
+The code of other crowdsource methods is not included in this repo. Please check their respective repos.
