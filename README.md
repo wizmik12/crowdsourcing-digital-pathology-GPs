@@ -6,7 +6,16 @@
 
 #### Citation
 ~~~
-@ARTICLE{}
+@article{lopez2021learning,
+  title={Learning from crowds in digital pathology using scalable variational Gaussian processes},
+  author={L{\'o}pez-P{\'e}rez, Miguel and Amgad, Mohamed and Morales-{\'A}lvarez, Pablo and Ruiz, Pablo and Cooper, Lee AD and Molina, Rafael and Katsaggelos, Aggelos K},
+  journal={Scientific reports},
+  volume={11},
+  number={1},
+  pages={1--9},
+  year={2021},
+  publisher={Nature Publishing Group}
+}
 ~~~
 
 ## Abstract
