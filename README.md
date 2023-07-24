@@ -71,16 +71,7 @@ $ conda install gpflow=1.14
 ~~~
 
 ### Run the code
-- **Download the data** which is publicly available at https://github.com/CancerDataScience/CrowdsourcingDataset-Amgadetal2019.
-
-#### Prepare the data
-- To **normalize** the images, run the script [color_normalization.py](code/preprocessing_database/color_normalization.py).
-- To **extract patches** use:
-   - [extracting_patches.py](code/preprocessing_database/extracting_patches.py) and [extract_corrected_patches.py](code/preprocessing_database/extract_corrected_patches.py).
- - To **extract annotations** use:
-   - [annotations_evaluation_set.py](code/preprocessing_database/annotations_evaluation_set.py), [core_set_annotation.py](code/preprocessing_database/core_set_annotation.py) and [extra_set.py](code/preprocessing_database/extra_set.py).
-- To **split train/test** use:
-  - [relocating_train.py](code/preprocessing_database/relocating_train.py) and [relocating_core_train.py](code/preprocessing_database/relocating_core_train.py).
+- **Download the data**: [link](https://drive.google.com/drive/folders/1yWT1aaQLiZAkAomtAdFlqlVWnRkhNrCu).
 
 #### Crowdsourcing classification
 - To **extract features** with a pretrained VGG16, run the script [extract_features.py](code/svgpcr_method/extract_features.py)
