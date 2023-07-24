@@ -2,7 +2,7 @@
 
 ![Approach](figures/Figure1.png)
 
-### Code for replicating the results of the paper [Learning from crowds in digital pathology using scalable variational Gaussian processes](https:)
+### Code for replicating the results of the paper [Learning from crowds in digital pathology using scalable variational Gaussian processes](https://www.nature.com/articles/s41598-021-90821-3)
 
 #### Citation
 ~~~
