@@ -51,9 +51,8 @@ The data used was published in "Structured crowdsourcing enables convolutional s
     url = {https://doi.org/10.1093/bioinformatics/btz083},
     eprint = {https://academic.oup.com/bioinformatics/article-pdf/35/18/3461/30024472/btz083.pdf},
 }
-
-The processed files to replicate the experiment of the current repo can be found on the following [link] (https://drive.google.com/drive/folders/1yWT1aaQLiZAkAomtAdFlqlVWnRkhNrCu).
 ~~~
+The processed files to replicate the experiment of the current repo can be found on the following [link] (https://drive.google.com/drive/folders/1yWT1aaQLiZAkAomtAdFlqlVWnRkhNrCu).
 
 ## Figures
 
